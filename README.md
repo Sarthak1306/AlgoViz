@@ -2,4 +2,7 @@
 Minor 1 Proj. 
 
 Team Members :-
-1. Pranit Gupta <guptapranit9@gmail.com> 
+1. Sarthak Srivastava <sarthaksrivastavaofficial@gmail.com>
+2. Pranit Gupta <guptapranit9@gmail.com> 
+3. Khushboo Jakhmola <khushboo.jakhmola@gmail.com>
+
