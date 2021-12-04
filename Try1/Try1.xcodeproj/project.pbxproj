@@ -9,22 +9,20 @@
 /* Begin PBXBuildFile section */
 		2D139D8527189B1D005095E7 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2D139D8427189B1D005095E7 /* ResourcePath.mm */; };
 		2D139D8827189B1D005095E7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D139D8727189B1D005095E7 /* main.cpp */; };
-		2D139D8B27189B1D005095E7 /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D139D8A27189B1D005095E7 /* cute_image.jpg */; };
-		2D139D8D27189B1D005095E7 /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 2D139D8C27189B1D005095E7 /* nice_music.ogg */; };
-		2D139D8F27189B1D005095E7 /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D139D8E27189B1D005095E7 /* sansation.ttf */; };
-		2D139D9127189B1D005095E7 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D139D9027189B1D005095E7 /* icon.png */; };
+		2DBF9C652750FA2C00E57EDB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DBF9C642750FA2C00E57EDB /* OpenGL.framework */; };
+		2DBF9C672750FA3100E57EDB /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DBF9C662750FA3100E57EDB /* GLUT.framework */; };
+		2DEC306C275B53BA00AF94DA /* Point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DEC306A275B53B900AF94DA /* Point.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D139D7F27189B1D005095E7 /* Try1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Try1.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D139D8327189B1D005095E7 /* Try1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Try1-Info.plist"; path = "../Try1-Info.plist"; sourceTree = "<group>"; };
 		2D139D8427189B1D005095E7 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
 		2D139D8627189B1D005095E7 /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
 		2D139D8727189B1D005095E7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		2D139D8A27189B1D005095E7 /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cute_image.jpg; path = ../cute_image.jpg; sourceTree = "<group>"; };
-		2D139D8C27189B1D005095E7 /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; name = nice_music.ogg; path = ../nice_music.ogg; sourceTree = "<group>"; };
-		2D139D8E27189B1D005095E7 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = sansation.ttf; path = ../sansation.ttf; sourceTree = "<group>"; };
-		2D139D9027189B1D005095E7 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		2DBF9C642750FA2C00E57EDB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		2DBF9C662750FA3100E57EDB /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		2DEC306A275B53B900AF94DA /* Point.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Point.cpp; path = ../../Bresenham/Point.cpp; sourceTree = "<group>"; };
+		2DEC306B275B53B900AF94DA /* Point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Point.h; path = ../../Bresenham/Point.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +30,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DBF9C672750FA3100E57EDB /* GLUT.framework in Frameworks */,
+				2DBF9C652750FA2C00E57EDB /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +43,7 @@
 			children = (
 				2D139D8127189B1D005095E7 /* Try1 */,
 				2D139D8027189B1D005095E7 /* Products */,
+				2DBF9C632750FA2C00E57EDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,32 +58,22 @@
 		2D139D8127189B1D005095E7 /* Try1 */ = {
 			isa = PBXGroup;
 			children = (
+				2DEC306A275B53B900AF94DA /* Point.cpp */,
+				2DEC306B275B53B900AF94DA /* Point.h */,
 				2D139D8427189B1D005095E7 /* ResourcePath.mm */,
 				2D139D8627189B1D005095E7 /* ResourcePath.hpp */,
 				2D139D8727189B1D005095E7 /* main.cpp */,
-				2D139D8927189B1D005095E7 /* Resources */,
-				2D139D8227189B1D005095E7 /* Supporting Files */,
 			);
 			path = Try1;
 			sourceTree = "<group>";
 		};
-		2D139D8227189B1D005095E7 /* Supporting Files */ = {
+		2DBF9C632750FA2C00E57EDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2D139D8327189B1D005095E7 /* Try1-Info.plist */,
+				2DBF9C662750FA3100E57EDB /* GLUT.framework */,
+				2DBF9C642750FA2C00E57EDB /* OpenGL.framework */,
 			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2D139D8927189B1D005095E7 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				2D139D8A27189B1D005095E7 /* cute_image.jpg */,
-				2D139D8C27189B1D005095E7 /* nice_music.ogg */,
-				2D139D8E27189B1D005095E7 /* sansation.ttf */,
-				2D139D9027189B1D005095E7 /* icon.png */,
-			);
-			path = Resources;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +134,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D139D9127189B1D005095E7 /* icon.png in Resources */,
-				2D139D8F27189B1D005095E7 /* sansation.ttf in Resources */,
-				2D139D8D27189B1D005095E7 /* nice_music.ogg in Resources */,
-				2D139D8B27189B1D005095E7 /* cute_image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DEC306C275B53BA00AF94DA /* Point.cpp in Sources */,
 				2D139D8827189B1D005095E7 /* main.cpp in Sources */,
 				2D139D8527189B1D005095E7 /* ResourcePath.mm in Sources */,
 			);
